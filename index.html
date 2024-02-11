@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty J Tradings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Indie+Flower&family=Josefin+Slab:wght@100&family=Kalam:wght@300&family=Rubik+Doodle+Shadow&family=Sevillana&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav-bar">
+            <span class="logo"><em>Pretty-J</em></span>
+            <input type="checkbox" id="menu-toggle" />
+            <ul class="menu">
+                <li><a href="#home"><i class="fas fa-home icon"></i>Home</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle icon"></i>About</a></li>
+                <li><a href="#services"><i class="fas fa-tools icon"></i>Services</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope icon"></i>Contact</a></li>
+                <label for="menu-toggle" class="toggle close"><i class="fas fa-times"></i></label>
+            </ul>
+            
+            <label for="menu-toggle" class="toggle open"><i class="fas fa-bars"></i></label>
+            
+        </div>
+        <!-- Home section -->
+        <section>
+            <div class="home-section" id="home">
+                <h1><em>PRETTY - J TRADING</em></h1>
+                <div class="wrapper">
+                    <div class="static-txt">Your Go-To for </div>
+                    <ul class="dynamic-txts">
+                      <li><span>Reviving  Appliances..</span></li>
+                      <li><span>Restoring convinence..</span></li>
+                      <li><span>Transportation.</span></li>
+                    </ul>
+                  </div>
+            </div>
+        </section>
+
+    </div>
+
+    <section >
+        <div class="about-section" id="about"></div>
+            <h1><em>ABOUT PRETTY J TRADINGS</em></h1>
+        
+            <div class="about-head">
+                <div class="left-info">
+                    <img src="images/About pic.jpeg"class="about-pic" alt="Pretty J Tradings Logo">
+                </div>
+            <div class="right-info">
+                
+                <p><em>Welcome to Pretty J Tradings!</em> We are your one-stop solution for all your appliance repair needs. With years of experience in the industry, we specialize in fixing machines, stoves, fridges, and many other appliances.</p>
+                <p>At Pretty J Tradings, customer satisfaction is our top priority. Our team of skilled technicians is committed to providing the best service possible, ensuring that your appliances are repaired efficiently and effectively.</p>
+                <p>In addition to our repair services, we also offer transportation solutions. Need to move your belongings? Give us a call! Our reliable transport service, equipped with trucks, ensures that your items are transported safely and securely to their destination.</p>
+                <p><em>Choose Pretty J Tradings for all your appliance repair and transportation needs. Experience the best service ever!</em></p>
+            </div>
+
+        </div>
+    </div>
+    </section>
+    <section class="services">
+        <div class="containers" id="services">
+            <h1><em>Our Services</em></h1>
+            <div class="service-container">
+                
+                <div class="service">
+                    <img src="images/repair fridge.webp" alt="Repairing Appliance Image">
+                    <div class="service-info">
+                        <h2>Appliance Repair</h2>
+                        <p>We specialize in fixing a wide range of appliances, including machines, stoves, fridges, and more. Our team of skilled technicians is dedicated to providing efficient and effective repair services to ensure your appliances are back up and running smoothly.</p>
+                        
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="images/trans.jpeg" alt="Transportation Service Image">
+                    <div class="service-info">
+                        <h2>Transportation Solutions</h2>
+                        <p>We also offer transportation solutions to meet your needs. Whether you need to move your belongings locally or long-distance, our reliable transport service is here to help.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <p><em>Please note:</em> It's not easy to determine the exact price for our services upfront. Factors such as the extent of repairs needed or the distance and volume of items for transportation can affect the final cost. However, we assure you that our prices are always fair and transparent, and we strive to provide the best value for your money.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1><em>Contact Us</em></h1>
+
+        <div class="contact-container" id="contact">
+           
+            <form action="https://formsubmit.co/ngwanathabelo@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Contact Number:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="type">Please choose the type of assistance you require:</label>
+                    <select id="type" name="type">
+                        <option value="transport">select here..</option>
+                        <option value="transport">Transport</option>
+                        <option value="repairing">Repairing Appliance</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p><em>NB: </em>For transportation, specify distance and luggage type. For repair services, describe the issue briefly.</p>
+                    <label for="issue">Describe Issue:</label>
+                    <textarea id="issue" name="issue" required></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    
+</body>
+</html>
